@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import "./Cart.css";
-export default function Cart({ cart }) {
+export default function Cart({ cart, clearCart }) {
   let total = 0;
   let totalShipping = 0;
   cart.map((product) => {
@@ -20,7 +20,7 @@ export default function Cart({ cart }) {
         <p className="cart-grand-total">Grand Total: ${grandTotal}</p>
       </div>
       <div className="btn">
-        <button className="btn-remove">
+        <button onClick={clearCart} className="btn-remove">
           <p>Clear Cart</p>
           <p>
             <svg
