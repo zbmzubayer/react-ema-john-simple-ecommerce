@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../../images/Logo.svg";
 import "./Header.css";
 export default function Header() {
@@ -6,16 +7,16 @@ export default function Header() {
       <img src={logo} alt="Ema john logo" />
       <ul>
         <li>
-          <a href="/order">Order</a>
+          <Link to="/orders">Order</Link>
         </li>
         <li>
-          <a href="/order-review">Order Review</a>
+          <Link to="/order-review">Order Review</Link>
         </li>
         <li>
-          <a href="/manage-inventory">Manage Inventory</a>
+          <Link to="/manage-inventory">Manage Inventory</Link>
         </li>
         <li>
-          <a href="/login">Login</a>
+          <Link to="/login">Login</Link>
         </li>
       </ul>
     </nav>
